@@ -1,0 +1,13 @@
+{
+	"name": "examenblog",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node servidor.js"
+	},
+	"dependencies": {
+		"express": "*",
+		"jade": "*",
+		"stylus": "*"
+	}
+}
