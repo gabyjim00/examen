@@ -1,0 +1,87 @@
+body {
+  font-family: "Verdana", "Arial";
+  font-size: 15px;
+  text-align: center;
+  text-stroke: 1px rgba(255,255,255,0.1);
+  color: #000;
+  background: #ccf;
+}
+h1,
+h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #600083;
+}
+h1 {
+  text-shadow: 1px 2px 2px #fcf;
+  font-size: 60px;
+  text-align: center;
+}
+a,
+a:visited {
+  font-family: "Verdana", "Arial";
+  font-size: 15px;
+  text-decoration: underline;
+  color: #000;
+  text-align: center;
+}
+
+#articulos {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.articulo {
+  margin: 35px;
+  border-style: double;
+/*border-top: 2px solid #000;*/
+  text-align: left;
+}
+.articulo .titulo {
+  font-weight: bold;
+  background-color: #eee;
+  width: 100px;
+}
+.fecha {
+  float: right;
+  font-size: 80%;
+  color: #FFFFFF;
+  font-family: "Verdana", "Arial";
+}
+.comentario {
+  border-style: groove;
+  font-family: "Verdana", "Arial";
+}
+.comentario:nth-child(odd) {
+  background-color: #ccf;
+  font-family: "Verdana", "Arial";
+}
+.comentario:nth-child(even) {
+  background-color: #ccf;
+  font-family: "Verdana", "Arial";
+}
+.autor {
+  width: 100px;
+  float: left;
+  border-right: 1px solid #000;
+  font-family: "Verdana", "Arial";
+}
+.textocomentario {
+  text-align: left;
+  font-family: "Verdana", "Arial";
+}
+.formcomentario input[type =text] {
+  width: 490px;
+  margin-left: 10px;
+  font-family: "Verdana", "Arial";
+}
+.formcomentario input[type =button],
+.formcomentario input[type =submit] {
+  text-align: left;
+  font-family: "Verdana", "Arial";
+}
+.formcomentario textarea {
+  width: 490px;
+  height: 90px;
+  font-family: "Verdana", "Arial";
+}

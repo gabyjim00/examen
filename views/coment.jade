@@ -1,0 +1,27 @@
+extends layout
+block contenido
+	span
+		
+	h1= autor
+	div.fecha= articulo.fecha
+	div.articulo
+		div.texto= articulo.texto
+		hr
+	- each comentario in articulo.comentarios
+		div.comentario
+			div.autor= comentario.autorcomentario
+			div.textocomentario= comentario.comentario
+	div.formcomentario
+		form( method="post", action="/blog/ponComentario")
+			input( type="hidden", name="_id", value=articulo._id.toHexString())
+			div
+				span Añade un comentario:
+			div
+				span Tu nombre:
+				input( type="text", name="autorcomentario")
+			div
+				span Comentario:
+				textarea( name="comentario", rows=5)
+			div
+				input(type="submit", value="Enviar comentario")
+	a(href="/")!= "Volver al blog Principal"

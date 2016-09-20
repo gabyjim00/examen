@@ -1,0 +1,15 @@
+extends layout
+block contenido
+	h1= autor
+	form( method="post")
+		div
+			div
+				span Autor :
+				input(type="text", name="autorpost")
+			div
+				span Entrada :
+				textarea( name="textopost", rows=5, cols=50)
+			div#editArticleSubmit
+				input(type="submit", value="Escribir entrada")
+
+	a(href="/")!= "Volver al blog Principal"

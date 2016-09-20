@@ -1,0 +1,14 @@
+extends layout
+block contenido
+	h1= autor
+	#articulos
+		- if(typeof(articulos) !== 'undefined')
+			- each articulo in articulos
+				div.articulo
+					div.fecha= articulo.fecha
+					h2.autor= articulo.autor
+					div.texto= articulo.texto
+				a(href="/blog/"+articulo._id)!= "Ver Comentarios"
+
+	a(href="/blog/nuevo/")!= "Crea una nueva entrada al Blog"
+				
